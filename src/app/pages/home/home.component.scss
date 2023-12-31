@@ -1,0 +1,11 @@
+article {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto;
+  justify-content: center;
+}
+.article-main,
+.articles-others {
+  width: 45%;
+}
