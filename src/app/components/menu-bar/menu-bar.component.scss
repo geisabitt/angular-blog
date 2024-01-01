@@ -1,0 +1,13 @@
+.container-menu-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.container-menu-bar ul {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+li span {
+  font-weight: bold;
+}

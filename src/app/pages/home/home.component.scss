@@ -1,11 +1,22 @@
+header {
+  width: 100%;
+  padding: 10px;
+}
 article {
   display: flex;
   gap: 20px;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .article-main,
 .articles-others {
   width: 45%;
+}
+@media screen and (max-width: 710px) {
+  .article-main,
+  .articles-others {
+    width: 100%;
+  }
 }
