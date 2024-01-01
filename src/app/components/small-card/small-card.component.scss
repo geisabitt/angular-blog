@@ -1,0 +1,39 @@
+.container-small-card {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  max-height: 150px;
+  overflow: hidden;
+}
+.small-card-img {
+  width: 100%;
+  height: auto;
+  background-image: url("https://i0.wp.com/thinkfirstcommunication.com/wp-content/uploads/2022/05/placeholder-1-1.png?w=1200&ssl=1"); /* URL da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.small-card-description p {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.small-card-title h2 {
+  font-size: 2vw;
+}
+.small-card-img,
+.container-small-itens {
+  width: 50%;
+}
+.small-card-title {
+  width: 100%;
+  height: auto;
+}
+.container-small-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
