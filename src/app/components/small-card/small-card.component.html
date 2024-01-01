@@ -5,11 +5,11 @@
   <div class="container-small-itens">
     <div class="small-card-title">
       <h2>
-        <a href="#">{{smallCardTitle}}</a>
+        <a [routerLink]="['content',id]">{{smallCardTitle}}</a>
       </h2>
     </div>
     <div class="small-card-description">
-      <a href="#">
+      <a [routerLink]="['content',id]">
         <p>{{smallCardDescription}}</p>
       </a>
     </div>
