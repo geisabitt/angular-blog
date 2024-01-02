@@ -4,13 +4,17 @@
 <menu-title></menu-title>
 <article>
   <div class="article-main">
-    <big-card *ngFor="let bigArtigo of artigos.slice(0, displayBigCard)" id="{{bigArtigo.id}}"
-      photoCover="{{bigArtigo.photo}}" bigTitle="{{bigArtigo.title}}"
-      bigDescription="{{bigArtigo.description}}"></big-card>
+    <big-card *ngFor="let bigArticle of articles.slice(startBig, displayBigCard)" id="{{bigArticle.id}}"
+      photoCover="{{bigArticle.photo}}" bigTitle="{{bigArticle.title}}"
+      bigDescription="{{bigArticle.description}}"></big-card>
   </div>
   <div class="articles-others">
-    <small-card *ngFor="let smallArtigo of artigos.slice(1, displaySmallCard)" id="{{smallArtigo.id}}"
-      smallPhotoCover="{{smallArtigo.photo}}" smallCardTitle="{{smallArtigo.title}}"
-      smallCardDescription='{{smallArtigo.description}}'></small-card>
+    <small-card *ngFor="let smallArticle of articles.slice(startSmall, displaySmallCard)" id="{{smallArticle.id}}"
+      smallPhotoCover="{{smallArticle.photo}}" smallCardTitle="{{smallArticle.title}}"
+      smallCardDescription='{{smallArticle.description}}'></small-card>
   </div>
 </article>
+<div class="container-buttons">
+  <button (click)="prevPage()">back</button>
+  <button (click)="nextPage()">Next</button>
+</div>

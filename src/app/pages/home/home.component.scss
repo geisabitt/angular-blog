@@ -15,6 +15,17 @@ article {
   padding: 20px;
   width: 45%;
 }
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.container-buttons button {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
 @media screen and (max-width: 710px) {
   .article-main,
   .articles-others {
